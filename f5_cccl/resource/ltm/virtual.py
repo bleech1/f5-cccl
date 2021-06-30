@@ -60,6 +60,7 @@ class VirtualServer(Resource):
                       vlansDisabled=None,
                       vlans=list(),
                       sourceAddressTranslation=dict(),
+                      translateAddress="enabled",
                       connectionLimit=0,
                       pool=None,
                       policies=list(),
