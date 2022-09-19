@@ -38,7 +38,8 @@ class HTTPSMonitor(Monitor):
     properties = dict(interval=5,
                       timeout=16,
                       send="GET /\\r\\n",
-                      recv="")
+                      recv="",
+                      compatibility="enabled")
 
     def __init__(self, name, partition, **kwargs):
         super(HTTPSMonitor, self).__init__(name, partition, **kwargs)
